@@ -6,14 +6,14 @@ CC_VERSION="$2"
 LD=$3
 
 if test -z "$KBUILD_BUILD_USER"; then
-	LINUX_COMPILE_BY=$(whoami | sed 's/\\/\\\\/')
+	LINUX_COMPILE_BY="hurtCopain"
 else
-	LINUX_COMPILE_BY=$KBUILD_BUILD_USER
+	LINUX_COMPILE_BY="hurtCopain"
 fi
 if test -z "$KBUILD_BUILD_HOST"; then
-	LINUX_COMPILE_HOST=`uname -n`
+	LINUX_COMPILE_HOST="aliensExist"
 else
-	LINUX_COMPILE_HOST=$KBUILD_BUILD_HOST
+	LINUX_COMPILE_HOST="aliensExist"
 fi
 
 LD_VERSION=$(LC_ALL=C $LD -v | head -n1 |
